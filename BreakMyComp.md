@@ -4,4 +4,4 @@
 
 
 # Hello (no)
-[link2](some-thing.html)[Hello(Not really)](user.html) :)
+[link2](some-thing.html)[Hello(Not really)](user.html)
