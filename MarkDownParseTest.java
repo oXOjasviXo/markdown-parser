@@ -14,11 +14,35 @@ public class MarkDownParseTest {
         assertEquals(2, 1+1);
     }
     @Test
-    public void getLinksTest(){
+    public void getLinks_testfile() throws IOException{
+        ArrayList<String> expected = new ArrayList<String>();
+        expected.add("https://something.com");
+        expected.add("some-page.html");
+        Path fileName = Path.of("test-file.md");
+        String content = Files.readString(fileName);
+        assertEquals(expected,test.getLinks(content));
+    }
+    @Test
+    public void getLinks_BreakMyComp() throws IOException{
         ArrayList<String> expected = new ArrayList<String>();
         expected.add("https://something.com");
         expected.add("some-thing.html");
-        Path fileName = Path.of("test-file.md");
+        expected.add("user.html");
+        Path fileName = Path.of("BreakMyComp.md");
+        String content = Files.readString(fileName);
+        assertEquals(expected,test.getLinks(content));
+    }
+    @Test
+    public void getLinks_BreakMyComp_2() throws IOException{
+        ArrayList<String> expected = new ArrayList<String>();
+        Path fileName = Path.of("BreakMyComp_2.md");
+        String content = Files.readString(fileName);
+        assertEquals(expected,test.getLinks(content));
+    }
+    @Test
+    public void getLinks_BreakMyComp_3() throws IOException{
+        ArrayList<String> expected = new ArrayList<String>();
+        Path fileName = Path.of("BreakMyComp_3.md");
         String content = Files.readString(fileName);
         assertEquals(expected,test.getLinks(content));
     }
