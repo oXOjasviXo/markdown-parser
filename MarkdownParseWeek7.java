@@ -1,10 +1,17 @@
 //https://howtodoinjava.com/java/io/java-read-file-to-string-examples/
 
+/**
+ * Author:thanhnhanlam
+ * github link to file:
+ * https://github.com/thanhnhanlam/markdown-parser/blob/main/MarkdownParse.java
+ */
+
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.util.ArrayList;
 
+//edited class name to allow testing within one directory
 public class MarkdownParseWeek7 {
 
     public static int getIndexOfLastParen(String markdown, int openParen) {

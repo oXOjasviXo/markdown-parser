@@ -1,5 +1,10 @@
 //https://howtodoinjava.com/java/io/java-read-file-to-string-examples/
 
+/**
+ * Author:Ojasvi Tewari
+ * github link: 
+ * https://github.com/oXOjasviXo/markdown-parser/blob/main/MarkdownParse.java
+ */
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
